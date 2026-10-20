@@ -190,6 +190,8 @@ if (dia == 1) {
     console.log("Quinta")
 } else if (dia == 6) {
     console.log("sexta")
+} else if (dia == 7) {
+    console.log("sabado")
 } else {
     console.log("dia invalido")
 }
