@@ -273,13 +273,15 @@ if( semana == "sabado" ||  semana == "domingo"){
 // Possuir um cupom promocional válido, independentemente de ser assinante.
 // Receba o valor da compra e duas variáveis booleanas (assinante e cupom válido). Informe se o desconto será aplicado e apresente o total final.
 
-let compras = 150
-let assinante = true
-let cupom = true
+let compras = 300;
+let assinante = false;
+let cupom = true;
 
-if( compra >= 150 || assinantes == true || cupom == true ){
-    console.log( compras / 100 * 150 )
+if( assinantes == true && compra >= 150 || cupom == true ){
+    console.log( `Você tem direito ao desconto` )
+    console.log( `Total Final: ${compras * 0.85}` )
 } else{
     console.log("Você não tem direito ao desconto!")
+    console.log( `Total Final: ${compras}` )
 }
  
